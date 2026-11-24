@@ -1,4 +1,4 @@
-// Configuração da página da E&L Produções de Software.
+// Configuração da página da EL Produções de Software.
 // whatsapp: número com 55 e DDD, só dígitos.
 // horario: dia da semana (0 = domingo, 6 = sábado) com a hora de abrir e a de fechar; dia fora da lista fica sem atendimento.
 window.EL_CONFIG = Object.freeze({

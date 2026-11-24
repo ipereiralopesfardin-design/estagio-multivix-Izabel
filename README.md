@@ -1,6 +1,6 @@
-# E&L Produções de Software | gestão pública em Domingos Martins - ES
+# EL Produções de Software | gestão pública em Domingos Martins - ES
 
-Projeto de Izabel Pereira Lopes Fardin para o estágio supervisionado (Análise e Desenvolvimento de Sistemas, Multivix). A página mostra a E&L Produções de Software, empresa de Domingos Martins que desde 1993 desenvolve sistemas integrados para prefeituras, câmaras e institutos de previdência. Canais oficiais da empresa: https://www.el.com.br.
+Projeto de Izabel Pereira Lopes Fardin para o estágio supervisionado (Análise e Desenvolvimento de Sistemas, Multivix). A página mostra a EL Produções de Software, empresa de Domingos Martins que desde 1993 desenvolve sistemas integrados para prefeituras, câmaras e institutos de previdência. Canais oficiais da empresa: https://www.el.com.br.
 
 Página publicada: https://estagio-multivix-izabel.vercel.app
 

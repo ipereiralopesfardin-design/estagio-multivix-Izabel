@@ -87,7 +87,7 @@ test('texto digitado é limpo e limitado a 60 caracteres', () => {
 test('a mensagem tem o número, o órgão com o nome digitado, os setores e o fecho', () => {
   const texto = mensagem(montar(escolha, data));
   assert.equal(texto, [
-    'Olá! Vim pelo site da E&L Produções de Software.',
+    'Olá! Vim pelo site da EL Produções de Software.',
     'Pedido de apresentação EL261123-1507',
     'Órgão: Prefeitura (Prefeitura de Venda Nova do Imigrante)',
     'Cargo: Secretário(a)',
@@ -101,8 +101,8 @@ test('a mensagem tem o número, o órgão com o nome digitado, os setores e o fe
 });
 
 test('o link do WhatsApp leva o número e o texto codificado', () => {
-  const link = linkWhatsApp('5527997161396', 'E&L 1 + 1');
-  assert.equal(link, 'https://wa.me/5527997161396?text=E%26L%201%20%2B%201');
+  const link = linkWhatsApp('5527997161396', 'Pedido & agenda 1 + 1');
+  assert.equal(link, 'https://wa.me/5527997161396?text=Pedido%20%26%20agenda%201%20%2B%201');
   assert.throws(() => linkWhatsApp('27997161396', 'x'), /inválido/);
 });
 

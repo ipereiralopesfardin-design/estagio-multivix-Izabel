@@ -140,7 +140,7 @@
   function mensagem(pedido) {
     const orgao = pedido.local ? `${pedido.orgao} (${pedido.local})` : pedido.orgao;
     const linhas = [
-      'Olá! Vim pelo site da E&L Produções de Software.',
+      'Olá! Vim pelo site da EL Produções de Software.',
       'Pedido de apresentação ' + pedido.numero,
       'Órgão: ' + orgao,
     ];

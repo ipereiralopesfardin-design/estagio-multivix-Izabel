@@ -16,4 +16,4 @@ const html = await readFile(resolve(output, 'index.html'), 'utf8');
 if (!html.includes('id="titulo-abertura"') || !html.includes('app.js')) {
   throw new Error('A página principal está incompleta.');
 }
-console.log('E&L Produções de Software: arquivos do site preparados em dist/.');
+console.log('EL Produções de Software: arquivos do site preparados em dist/.');

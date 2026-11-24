@@ -11,7 +11,7 @@
   const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Botões de conversa geral.
-  const linkGeral = P.linkWhatsApp(cfg.whatsapp, 'Olá! Vim pelo site da E&L Produções de Software e gostaria de falar sobre os sistemas de gestão pública.');
+  const linkGeral = P.linkWhatsApp(cfg.whatsapp, 'Olá! Vim pelo site da EL Produções de Software e gostaria de falar sobre os sistemas de gestão pública.');
   document.querySelectorAll('[data-wa]').forEach(a => { a.href = linkGeral; });
 
   // Menu do celular.

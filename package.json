@@ -2,7 +2,7 @@
   "name": "el-software",
   "version": "1.0.0",
   "private": true,
-  "description": "Página de demonstração da E&L Produções de Software, sistemas de gestão pública em Domingos Martins - ES, com pedido de apresentação pelo WhatsApp, sem dependências.",
+  "description": "Página de demonstração da EL Produções de Software, sistemas de gestão pública em Domingos Martins - ES, com pedido de apresentação pelo WhatsApp, sem dependências.",
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
