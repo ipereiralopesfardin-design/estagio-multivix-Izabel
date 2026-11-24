@@ -2,6 +2,8 @@
 
 Projeto de Izabel Pereira Lopes Fardin para o estágio supervisionado (Análise e Desenvolvimento de Sistemas, Multivix). A página mostra a E&L Produções de Software, empresa de Domingos Martins que desde 1993 desenvolve sistemas integrados para prefeituras, câmaras e institutos de previdência. Canais oficiais da empresa: https://www.el.com.br.
 
+Página publicada: https://estagio-multivix-izabel.vercel.app
+
 ## Sobre a página
 
 Quem visita escolhe o tipo de órgão e vai marcando os setores que quer conhecer. Cada setor marcado acende numa roda; quando dois setores marcados trocam informação entre si (por exemplo, a folha de pagamento que segue para a contabilidade), aparece um fio ligando os dois, e o ofício ao lado descreve essa passagem. Ao protocolar, o ofício ganha número, carimbo com data e hora e um link de WhatsApp já preenchido com o pedido. Nenhuma escolha é salva.
