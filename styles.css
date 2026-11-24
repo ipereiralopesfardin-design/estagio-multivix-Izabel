@@ -235,7 +235,7 @@ figcaption { margin-top: .55rem; font-size: .82rem; color: var(--grafite-2); }
 .onde-foto { margin: 0; }
 .onde-foto img { width: 100%; max-height: 640px; object-fit: cover; border-radius: 4px; }
 .onde-foto figcaption { color: rgba(243, 245, 242, .78); }
-.onde-fica :focus-visible, .rodape :focus-visible { outline-color: var(--marca-texto); }
+.onde-fica :focus-visible { outline-color: var(--marca-texto); }
 
 /* Dúvidas */
 .perguntas { max-width: 52rem; border-top: 1px solid var(--linha); }
@@ -246,13 +246,20 @@ figcaption { margin-top: .55rem; font-size: .82rem; color: var(--grafite-2); }
 .perguntas details[open] summary .icone { transform: rotate(45deg); }
 .perguntas details p { max-width: 44rem; color: var(--grafite-2); padding-bottom: .4rem; }
 
-/* Rodapé */
-.rodape { background: var(--mata-escura); color: rgba(243, 245, 242, .86); padding: 3rem var(--lado) 3.5rem; font-size: .88rem; }
-.rodape-dentro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 2.5rem; }
-.rodape-marca { display: flex; gap: 1rem; align-items: flex-start; }
-.rodape-marca .marca-selo { color: var(--papel); border-color: var(--papel); outline-color: var(--papel); flex: none; margin-top: .2rem; }
-.rodape-marca strong { color: var(--papel); }
-.rodape a { color: var(--marca-texto); }
+/* Rodapé: contracapa do processo */
+.rodape { position: relative; background: var(--cartolina); color: var(--grafite); padding: 3.4rem var(--lado) 3.6rem; }
+.rodape::before { content: ''; position: absolute; left: 0; right: 0; top: 12px; border-top: 1px solid var(--cartolina-escura); border-bottom: 1px solid var(--cartolina-clara); }
+.rodape a { color: var(--tinta); }
+.contracapa-cabeca { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem 1.1rem; padding-bottom: .9rem; margin-bottom: 1.7rem; border-bottom: 2px solid var(--grafite); }
+.contracapa-titulo { font: 800 1.75rem/1.1 var(--titulo); text-transform: uppercase; letter-spacing: .03em; }
+.contracapa-sub, .contracapa-folha { margin: 0; font: 500 .74rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #33465A; }
+.contracapa-folha { margin-left: auto; text-transform: none; letter-spacing: .02em; }
+.contracapa-campos { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.1rem 2rem; margin: 0 0 2.6rem; }
+.contracapa-pe { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(15rem, 1fr); gap: 2.5rem 4rem; align-items: end; }
+.contracapa-obs { margin: 0; max-width: 40rem; font-size: .9rem; line-height: 1.55; }
+.assinatura { padding-top: .55rem; border-top: 1.5px solid var(--grafite); text-align: center; }
+.assinatura-nome { margin: 0; font: 700 1.2rem/1.2 var(--titulo); letter-spacing: .02em; }
+.assinatura-papel { margin: .25rem auto 0; max-width: 22rem; font-size: .8rem; line-height: 1.4; color: #33465A; }
 
 /* Barra do celular */
 .barra-celular { display: none; }
@@ -279,7 +286,10 @@ figcaption { margin-top: .55rem; font-size: .82rem; color: var(--grafite-2); }
   .menu a { padding: .75rem 0; border-bottom: 1px solid var(--linha); }
   .js .menu { display: none; }
   .js .menu.aberto { display: flex; }
-  .rodape-dentro { grid-template-columns: 1fr; }
+  .contracapa-campos { grid-template-columns: 1fr 1fr; }
+  .contracapa-campos .campo:first-child { grid-column: 1 / -1; }
+  .contracapa-pe { grid-template-columns: 1fr; gap: 2.8rem; }
+  .assinatura { max-width: 24rem; }
   html { scroll-padding-bottom: 5.5rem; }
   .barra-celular { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .6rem 1rem calc(.6rem + env(safe-area-inset-bottom)); background: var(--papel); border-top: 1px solid var(--linha); }
   .barra-celular .botao { min-height: 46px; padding: .6rem .8rem; }
@@ -316,6 +326,10 @@ figcaption { margin-top: .55rem; font-size: .82rem; color: var(--grafite-2); }
   .folha-n { grid-row: auto; margin: 0 0 .5rem; }
   .onde-acoes .botao { width: 100%; }
   .perguntas summary { font-size: 1.18rem; }
+  .rodape { padding-top: 2.8rem; }
+  .contracapa-titulo { font-size: 1.45rem; }
+  .contracapa-folha { margin-left: 0; }
+  .contracapa-campos { grid-template-columns: 1fr; gap: .9rem; }
 }
 
 @media (forced-colors: active) {
